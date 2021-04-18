@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Carson</title>
+    <script>
+         function callAndroid() {
+            result = aaa.hello("js去调用了android中的hello方法");
+            alert("调用Android方法的返回值..." + result)
+         }
+
+         function callJS(data) {
+             alert("JS的callJS方法..." + data);
+             return "js data"
+         }
+      </script>
+</head>
+<body>
+    <button type="button" id="button1" onclick="callAndroid()">调用Android的方法</button>
+</body>
+</html>
